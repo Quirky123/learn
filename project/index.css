@@ -1,0 +1,1096 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "思源黑体";
+}
+
+/* 去掉li 的小圆点 */
+button {
+    /* 当我们鼠标经过button 按钮的时候，鼠标变成小手 */
+    cursor: pointer
+}
+
+body {
+    background-color: #1c152e;
+    position: relative;
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.emphasize {
+    color: #88c7f7;
+}
+
+.blue {
+    color: #88c7f7;
+}
+
+/* 吉祥物 */
+.mascot {
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    top: 800px;
+    left: 1500px;
+    background: url(/static/吉祥物.png) no-repeat center;
+    background-size: contain;
+    z-index: 3;
+}
+
+.mascot:hover {
+    background: url(/static/吉祥物招手.png) no-repeat center;
+    background-size: contain;
+    z-index: 3;
+}
+
+/* 吉祥物 */
+
+/* 导航 */
+
+/* 图片 */
+.nav {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.nav .png {
+    display: flex;
+    padding-left: 50px;
+}
+
+.nav .png div {
+    display: flex;
+    align-items: center;
+}
+
+.nav .png div img {
+    height: 30px;
+}
+
+.Alogo-head {
+    padding-right: 10px;
+}
+
+.Alogo-font {
+    padding-right: 40px;
+}
+
+.wiseplus-logo {
+    padding-right: 100px;
+}
+
+/* 文字 */
+.header {
+    display: flex;
+
+}
+
+.header div {
+    width: 50px;
+    padding: 0 15px;
+    line-height: 100px;
+    text-align: center;
+    width: 100px;
+    font-family: "思源黑体";
+    color: #ffffff;
+}
+
+.header div:hover {
+    border-bottom: 2px solid #0f9cf5;
+    cursor: pointer;
+}
+
+.level0 {
+    position: relative;
+}
+
+.level0 li {
+    list-style-type: none;
+    height: 100px;
+}
+
+.level0 li :hover {
+    cursor: pointer;
+}
+
+.level0>ul {
+    display: none;
+}
+
+.level0>ul>li>ul {
+    display: none;
+}
+
+.level0:hover .level1 {
+    animation: move linear 1s 1;
+    display: block;
+    z-index: 3;
+}
+
+.level1:hover {
+    display: block;
+}
+
+.level0>ul>li:hover>ul {
+    animation: move linear 1s 1;
+    display: block;
+    z-index: 3;
+}
+
+.level0>a {
+    width: 100%;
+    height: 100px;
+}
+
+.level1 {
+    position: relative;
+    height: 300px;
+    z-index: 4;
+}
+
+/* 
+.level0:hover>.level1 {
+    display: block;
+} */
+
+.level1 .level1_1 {
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    width: 160px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 3;
+}
+
+.level1_1_1 {
+    position: absolute;
+    top: 0;
+    left: 160px;
+    height: 500px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.level1 .level1_2 {
+    position: absolute;
+    top: 100px;
+    left: -30px;
+    width: 160px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 3;
+}
+
+.level1_1_2 {
+    position: absolute;
+    top: -100px;
+    left: 160px;
+    height: 500px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+.level1 .level1_3 {
+    position: absolute;
+    top: 200px;
+    left: -30px;
+    width: 160px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 3;
+}
+
+.level1_1_3 {
+    position: absolute;
+    top: -200px;
+    left: 160px;
+    height: 500px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+@keyframes move {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* 导航结束 */
+
+
+/* 大logo开始 */
+/* 椭圆和星球 */
+.planet__ellipse__characters1__characters2 {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    /* background-color: #fff; */
+    margin: 0 auto;
+}
+
+.ball {
+    position: absolute;
+    top: 15px;
+    left: 558px;
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    background-image: radial-gradient(#97d9f5, #4e81c9);
+    z-index: 0;
+    /* filter: blur(1px); */
+    filter: brightness(1.1);
+    box-shadow: 0px 0px 20px rgba(128, 0, 128, 0.5) inset, 0px 0px 50px rgba(255, 255, 255, .3);
+}
+
+.character1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-text-stroke: 1px purple;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
+    height: 500px;
+    line-height: 500px;
+    text-align: center;
+    font-size: 250px;
+    z-index: 1;
+}
+
+.characters2 {
+    position: absolute;
+    top: 440px;
+    left: 520px;
+    color: #fff;
+    font-size: 70px;
+}
+
+.robot {
+    position: absolute;
+    top: 125px;
+    left: 650px;
+}
+
+.robot img {
+    width: 400px;
+}
+
+.ellipse__container {
+    position: absolute;
+    top: 187px;
+    left: 463px;
+    height: 350px;
+    width: 805px;
+    /* background-color: #fff; */
+    overflow: hidden;
+    transform: rotate(-25deg);
+    /* color: transparent; */
+}
+
+.ellipse {
+    position: absolute;
+    left: 0;
+    top: -42px;
+    height: 350px;
+    width: 800px;
+    border-radius: 50%;
+    border: 2px solid #f6b539;
+    box-shadow: 5px 5px 20px rgba(139, 121, 19, 0.2);
+}
+
+.smallYellowBall {
+    position: absolute;
+    top: 265px;
+    left: 562px;
+    width: 50px;
+    height: 50px;
+    background-color: #eea030;
+    border-radius: 50%;
+}
+
+/* 大logo结束 */
+
+/* 视频板块开始 */
+.container__video {
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    opacity: 0.5;
+}
+
+.video video {
+    width: 700px;
+    z-index: 1;
+}
+
+.frosted__glass {
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1272px;
+    height: 322px;
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    z-index: 0;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.9) inset;
+}
+
+.videoBall1 {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #eea030;
+}
+
+.videoBall2 {
+    position: absolute;
+    top: -24px;
+    left: 1168px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #eea030;
+}
+
+.videoBall3 {
+    position: absolute;
+    top: 130px;
+    left: 1180px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #5e9fc8;
+}
+
+/* 视频板块结束 */
+
+/* 了解小A开始 */
+.cintainer__wrap1 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+    height: 900px;
+}
+
+.wrap1__nav1 {
+    width: 1272px;
+    height: 100px;
+}
+
+.nav1__ball {
+    position: absolute;
+    top: 28px;
+    left: 726px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #eea030;
+}
+
+.nav1__crossband {
+    position: absolute;
+    top: 75px;
+    left: 745px;
+    width: 10px;
+    height: 2px;
+    background-color: #eea030;
+    transition: width 1s ease;
+}
+
+.cintainer__wrap1:hover .nav1__crossband {
+    width: 180px;
+}
+
+.cintainer__wrap1 .know {
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 100px;
+    color: #fff;
+}
+
+.wrap1__text1 {
+    width: 1000px;
+    height: 75px;
+    font-size: 20px;
+    line-height: 75px;
+    color: #fff;
+}
+
+.wrap1__text1 span {
+    color: #88c7f7;
+}
+
+.wrap1__text2 {
+    width: 1000px;
+    height: 75px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.wrap1__cintainer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 1272px;
+    height: 680px;
+    backdrop-filter: blur(30px);
+    /* background: rgba(255, 255, 255, 0.05); */
+    border-radius: 10px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(67, 47, 80, 1) 35%, rgba(71, 88, 123, 1) 100%);
+}
+
+.wrap1__cintainer img {
+    width: 800px;
+}
+
+/* 了解小A结束 */
+
+/* 团队成果开始 */
+.container__wrap2 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+    height: 900px;
+}
+
+.wrap2__nav2 {
+    position: relative;
+    width: 1272px;
+    height: 100px;
+
+}
+
+.nav2__ball {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #eea030;
+}
+
+.nav2__crossband {
+    position: absolute;
+    top: 73px;
+    left: 1250px;
+    width: 10px;
+    height: 2px;
+    background-color: #eea030;
+    transition: width 1s ease;
+    transform-origin: left center;
+    transform: rotate(180deg);
+}
+
+.container__wrap2:hover .nav2__crossband {
+    width: 180px;
+}
+
+.container__wrap2 .know {
+    position: absolute;
+    top: 0;
+    right: 70px;
+    height: 100px;
+    font-size: 30px;
+    line-height: 100px;
+    color: #fff;
+}
+
+.wrap2__container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 1272px;
+    height: 680px;
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+.wrap2__container .text1 {
+    /* position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%); */
+    width: 1000px;
+    height: 200px;
+    font-size: large;
+    color: #ffffff;
+}
+
+.wrap2__container .title {
+    font-size: larger;
+}
+
+.container__wrap2 .yellowBall {
+    position: absolute;
+    top: 10px;
+    left: -50px;
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    background-color: #5e9fc8;
+}
+
+.shell {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    width: 1000px;
+    height: 350px;
+    overflow-x: hidden;
+    border-radius: 5px;
+}
+
+.focus {
+    height: 300px;
+    width: 700px;
+    position: relative;
+}
+
+.focus ul {
+    width: 4200px;
+    position: absolute;
+    left: 0;
+}
+
+.arrow-r {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: -300px;
+    width: 40px;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+    color: #74a7ce;
+    font-size: 25px;
+    z-index: 1;
+    border-right: #0f9cf5 2px solid;
+    background: rgba(30, 36, 52, .3);
+}
+
+
+.focus ul li {
+    float: left;
+    width: 700px;
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.twocontainer {
+    width: 45%;
+    height: 300px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    background: rgba(255, 255, 255, .1);
+}
+
+.twocontainer:hover {
+    background: rgba(255, 255, 255, .3);
+}
+
+.twocontainer>img {
+    width: 100%;
+    height: 200px;
+}
+
+.twocontainer>.text {
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    font-size: 8px;
+    text-align: center;
+}
+
+.wenzi {
+    width: 70%;
+    height: 70%;
+}
+
+.circle {
+    position: absolute;
+    bottom: -50px;
+    left: 400px;
+}
+
+.circle li {
+    float: left;
+    width: 12px;
+    height: 4px;
+    /*background-color: #fff;*/
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin: 0 3px;
+    border-radius: 4px;
+    /*鼠标经过显示小手*/
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.current {
+    background-color: #88c7f7;
+}
+
+
+/* 团队成果结束 */
+
+/* 加入我们开始 */
+
+/* animation: move linear 1s 1; */
+.container__whole {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+    height: 3330px;
+    perspective: 500px;
+    transform-style: preserve-3d;
+    overflow: hidden;
+}
+
+.whole__Nav {
+    position: relative;
+    width: 1272px;
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+.Nav__ball {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #eea030;
+}
+
+.Nav__crossband {
+    position: absolute;
+    top: 70px;
+    left: 25px;
+    width: 10px;
+    height: 2px;
+    background-color: #eea030;
+    transition: width 1s ease;
+}
+
+.container__whole:hover .Nav__crossband {
+    width: 180px;
+}
+
+.container__whole .know {
+    position: absolute;
+    left: 70px;
+    height: 100px;
+    font-size: 30px;
+    line-height: 100px;
+    color: #fff;
+}
+
+.whole__Ball1 {
+    position: absolute;
+    top: 745px;
+    left: 76px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-color: #5e9fc8;
+}
+
+.whole__Ball2 {
+    position: absolute;
+    top: 1350px;
+    right: 220px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: #eea030;
+}
+
+.whole__Ball3 {
+    position: absolute;
+    top: 2700px;
+    left: -100px;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background-color: #5e9fc8;
+}
+
+.whole__wrapcontainer {
+    width: 1272px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+}
+
+.container__wrap3 {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    width: 464px;
+    height: 100%;
+}
+
+.wrap3__text__top {
+    width: 464px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    font-size: 20px;
+    color: #fff;
+}
+
+.wrap3__text__bottom {
+    width: 464px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    color: #fff;
+}
+
+.overturn {
+    position: relative;
+    width: 464px;
+    height: 680px;
+    /* transition: all 1s linear; */
+    transform-style: preserve-3d;
+}
+
+
+
+.overturn:hover div[value="frosted__glass"] {
+    animation: disappear 1s linear  1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.container__wrap3 div[value="frosted__glass"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 464px;
+    height: 680px;
+    background-color: #fff;
+}
+
+.overturn .wrap3__box1Back {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container__wrap4 {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    transform: translateX(-100px);
+    width: 464px;
+    height: 100%;
+}
+
+.container__wrap4 div[value="frosted__glass"] {
+    width: 464px;
+    height: 680px;
+    background-color: #fff;
+}
+
+.container__wrap3 div[value="frosted__glass"], .container__wrap4 div[value="frosted__glass"] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(250, 250, 250, 0.3) inset;
+    /* transform: rotateZ(1px); */
+}
+
+.container__wrap4 .overturn .wrap4__box1 {
+    background: radial-gradient(300px 300px at 325px 160px, #7faed1, #423e53);
+}
+
+
+
+.container__wrap3 div[value="frosted__glass__back"], .container__wrap4 div[value="frosted__glass__back"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 464px;
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(250, 250, 250, 0.3) inset;
+    /* transform: rotateY(180deg); */
+    /* backface-visibility: hidden; */
+}
+
+
+
+div[value="frosted__glass__back"] .title1, .title2 {
+    width: 400px;
+    height: 75px;
+    line-height: 75px;
+    font-size: 20px;
+    color: #eea030;
+    text-align: left;
+}
+
+div[value="frosted__glass__back"] .text1, .text2 {
+    width: 400px;
+    height: 200px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.bigfont {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    font-size: 25px;
+    color: #0f9cf5;
+}
+
+.triangle {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 35px solid rgba(238, 160, 48, .4);
+    transform: rotate(35deg);
+}
+
+.title {
+    width: 440px;
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    line-height: 100px;
+}
+
+.whole__wrapcontainer img {
+    height: 265.22px;
+    width: 439.99px;
+}
+
+.textContainer {
+    width: 440px;
+    height: 270px;
+}
+
+.highlight {
+    height: 75px;
+    line-height: 75px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.verticalLine {
+    position: absolute;
+    top: 393px;
+    left: 5px;
+    width: 2px;
+    height: 20px;
+    background-color: #0f9cf5;
+}
+
+.blueLine1, .blueLine2 {
+    width: 2px;
+    height: 20px;
+    background-color: #0f9cf5;
+}
+
+.blueLine1 {
+    position: absolute;
+    top: 28px;
+    left: 25px;
+}
+
+.blueLine2 {
+    position: absolute;
+    left: 25px;
+    top: 305px;
+}
+
+.normal {
+    color: rgba(255, 255, 255, .6);
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.wrap3__text__bottom {
+    line-height: 40px;
+}
+
+.yellow {
+    color: #eea030;
+}
+
+/* 加入我们结束 */
+
+/* 底部导航开始 */
+.bottomNav {
+    width: 100%;
+    height: 680px;
+    display: flex;
+    flex-flow: column;
+    background-color: #000;
+    /* margin-top: 50px; */
+}
+
+.bottomNav__box1 {
+    width: 100%;
+    height: 480px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center
+}
+
+.leftBox {
+    width: 60%;
+    color: #fff;
+    font-size: 25px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.leftBox__top {
+    width: 450px;
+    /* height: 200px; */
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.leftBox__bottom {
+    width: 450px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: center
+}
+
+.middle {
+    width: 2px;
+    height: 400px;
+    background-color: #fff;
+    transform: translateY(20px);
+}
+
+.leftBox__bottom img {
+    width: 150px;
+    padding-right: 20px;
+}
+
+.rightBox {
+    width: 40%;
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.rightBox li {
+    list-style: none;
+}
+
+.bottomNav__box2 {
+    width: 100%;
+    height: 200px;
+}
+
+.bottomNav__box2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 底部导航结束 */
